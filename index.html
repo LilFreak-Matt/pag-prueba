@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio // 2000s Punk Zine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN RÁPIDA -->
+    <nav class="punk-nav">
+        <!-- El ID crítico 'btnIdioma' debe estar escrito exactamente así -->
+        <button id="btnIdioma" class="lang-toggle-btn" data-es="[ EN ] Switch to English" data-en="[ ES ] Cambiar a Español">[ EN ] Switch to English</button>
+        <a href="#art-gallery" class="nav-link" data-es="ART_WORK" data-en="ART_WORK">ART_WORK</a>
+        <a href="#writing-section" class="nav-link" data-es="ESCRITURA" data-en="WRITING">ESCRITURA</a>
+        <a href="#video-zone" class="nav-link" data-es="VIDEO_MEDIA" data-en="VIDEO_MEDIA">VIDEO_MEDIA</a>
+        <a href="https://tutienda.com" target="_blank" rel="noopener noreferrer" class="nav-link store-link" data-es="TIENDA_ONLINE 🛒" data-en="ONLINE_STORE 🛒">TIENDA_ONLINE 🛒</a>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL DEL PORTAFOLIO -->
+    <div class="portfolio-container">
+        
+        <!-- CABECERA: Letras recortadas de revista -->
+        <header class="punk-magazine-title" data-reveal>
+            <div class="letter-row row-top">
+                <span class="ransom-letter l-yellow rotate-left font-serif">M</span>
+                <span class="ransom-letter l-white rotate-right font-sans">I</span>
+                <span class="ransom-letter l-blue rotate-left font-mono">_</span>
+                <span class="ransom-letter l-green rotate-right font-serif">A</span>
+                <span class="ransom-letter l-pink rotate-left font-sans">R</span>
+                <span class="ransom-letter l-black rotate-right font-serif">T</span>
+                <span class="ransom-letter l-grey rotate-left font-mono">E</span>
+            </div>
+            <div class="letter-row row-bottom">
+                <span class="ransom-letter l-white rotate-right font-serif">P</span>
+                <span class="ransom-letter l-black rotate-left font-sans">O</span>
+                <span class="ransom-letter l-pink rotate-right font-mono">R</span>
+                <span class="ransom-letter l-yellow rotate-left font-serif">T</span>
+                <span class="ransom-letter l-white rotate-right font-sans">F</span>
+                <span class="ransom-letter l-grey rotate-left font-mono">O</span>
+                <span class="ransom-letter l-blue rotate-right font-serif">L</span>
+                <span class="ransom-letter l-green rotate-left font-sans">I</span>
+                <span class="ransom-letter l-pink rotate-right font-mono">O</span>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE MÚSICA DE AMBIENTE -->
+        <section class="music-section" data-reveal>
+            <div class="section-badge" data-es="[ AUDIO_INSPIRACIÓN ]" data-en="[ AUDIO_INSPIRATION ]">[ AUDIO_INSPIRACIÓN ]</div>
+            <iframe class="spotify-widget" src="https://open.spotify.com/embed/playlist/5wqGbgtIlgdAAjpq0MQEQY" title="Playlist de Spotify" width="100%" height="80" style="border: 0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+        </section>
+
+        <!-- GALERÍA DE PINTURAS -->
+        <section id="art-gallery" class="portfolio-section" data-reveal>
+            <h2 class="section-title" data-es="PINTURAS & ARTWORK //" data-en="PAINTINGS & ARTWORK //">PINTURAS & ARTWORK //</h2>
+            <div class="grid-gallery">
+                <div class="art-card" data-reveal-item>
+                    <div class="image-placeholder" data-es="[ INSERTA_PINTURA_01 ]" data-en="[ INSERT_PAINTING_01 ]">[ INSERTA_PINTURA_01 ]</div>
+                    <div class="card-details">
+                        <h4 data-es="Óleo sobre Lienzo" data-en="Oil on Canvas">Óleo sobre Lienzo</h4>
+                        <p class="clean-text" data-es="Descripción breve del concepto utilizando Verdana limpia." data-en="Brief description of the concept using clean Verdana.">Descripción breve del concepto utilizando Verdana limpia.</p>
+                    </div>
+                </div>
+                <div class="art-card" data-reveal-item>
+                    <div class="image-placeholder" data-es="[ INSERTA_PINTURA_02 ]" data-en="[ INSERT_PAINTING_02 ]">[ INSERTA_PINTURA_02 ]</div>
+                    <div class="card-details">
+                        <h4 data-es="Técnica Mixta" data-en="Mixed Media">Técnica Mixta</h4>
+                        <p class="clean-text" data-es="Notas del proceso artístico o ideas de desarrollo urbano." data-en="Notes on the artistic process or urban development ideas.">Notas del proceso artístico o ideas de desarrollo urbano.</p>
+                    </div>
+                </div>
+                <div class="art-card" data-reveal-item>
+                    <div class="image-placeholder" data-es="[ PRÓXIMA_OBRA ]" data-en="[ NEXT_WORK ]">[ PRÓXIMA_OBRA ]</div>
+                    <div class="card-details">
+                        <h4 data-es="Idea en Progreso" data-en="Work in Progress">Idea en Progreso</h4>
+                        <p class="clean-text" data-es="Espacio listo para alojar cualquier trabajo futuro." data-en="Space ready to host any future work.">Espacio listo para alojar cualquier trabajo futuro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ESCRITURA -->
+        <section id="writing-section" class="portfolio-section dark-block" data-reveal>
+            <h2 class="section-title text-yellow" data-es="TEXTOS & ESCRITURA //" data-en="TEXTS & WRITING //">TEXTOS & ESCRITURA //</h2>
+            <div class="writing-container">
+                <article class="text-entry" data-reveal-item>
+                    <h3 data-es="Manifesto Underground (2026)" data-en="Underground Manifesto (2026)">Manifesto Underground (2026)</h3>
+                    <p class="clean-text" 
+                       data-es="Aquí puedes plasmar tu prosa, poemas o manifiestos artísticos. Al maquetar con fuentes sans-serif nativas (Tahoma / Verdana), aseguramos que los textos extensos se lean con total fluidez en pantallas móviles sin sobrecargar el procesador del dispositivo, garantizando un sitio rápido." 
+                       data-en="Here you can express your prose, poems, or artistic manifestos. By layouting with native sans-serif fonts (Tahoma / Verdana), we ensure that long texts read fluidly on mobile screens without overloading the device's processor, guaranteeing a fast site.">
+                        Aquí puedes plasmar tu prosa, poemas o manifiestos artísticos. Al maquetar con fuentes sans-serif nativas (Tahoma / Verdana), aseguramos que los textos extensos se lean con total fluidez en pantallas móviles sin sobrecargar el procesador del dispositivo, garantizando un sitio rápido.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE VIDEOS INTERACTIVOS -->
+        <section id="video-zone" class="portfolio-section" data-reveal>
+            <h2 class="section-title" data-es="MEDIA & VIDEO //" data-en="MEDIA & VIDEO //">MEDIA & VIDEO //</h2>
+            <div class="video-grid">
+                <div class="video-card" data-reveal-item>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/k2F_Bg0PImQ" title="Video de YouTube" style="border: 0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="card-details"><h4 data-es="Transmisión Externa YouTube" data-en="YouTube External Stream">Transmisión Externa YouTube</h4></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="portfolio-footer" data-reveal>
+            <div class="store-banner">
+                <h3 data-es="¿TE GUSTA MI ARTE? VISITA LA TIENDA" data-en="LIKE MY ART? VISIT THE STORE">¿TE GUSTA MI ARTE? VISITA LA TIENDA</h3>
+                <p class="clean-text" data-es="Adquiere copias físicas, fanzines impresos y pinturas originales." data-en="Acquire physical copies, printed fanzines, and original paintings.">Adquiere copias físicas, fanzines impresos y pinturas originales.</p>
+                <a href="https://www.redbubble.com/es/people/Li-lMatt/shop?asc=u" target="_blank" rel="noopener noreferrer" class="giant-store-btn" data-es="INGRESAR A LA TIENDA ONLINE ⚡" data-en="ENTER THE ONLINE STORE ⚡">INGRESAR A LA TIENDA ONLINE ⚡</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- PANEL DE PERSONALIZACIÓN ESTILO CONTROL RETRO -->
+    <aside class="customizer-panel" aria-label="Configuración visual">
+        <h2 class="customizer-title">_CONFIG_VISUAL</h2>
+        <div class="control-group">
+            <label for="inputColor" data-es="Fondo de Página:" data-en="Page Background:">Fondo de Página:</label>
+            <input type="color" id="inputColor" value="#ebeae4">
+        </div>
+        <div class="control-group">
+            <label for="selectFuente" data-es="Tipografía de Lectura:" data-en="Reading Typography:">Tipografía de Lectura:</label>
+            <select id="selectFuente">
+                <option value="Tahoma, Verdana, Geneva, sans-serif">Tahoma / Verdana (Original)</option>
+                <option value="'Segoe UI', Arial, sans-serif">Segoe UI</option>
+                <option value="'Courier New', monospace">Courier (Goth Tech)</option>
+                <option value="Georgia, serif">Georgia (Fanzine Prosa)</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="inputFondoUrl" data-es="Imagen de Fondo (URL):" data-en="Background Image (URL):">Imagen de Fondo (URL):</label>
+            <input type="url" id="inputFondoUrl" placeholder="https://imagen.jpg">
+        </div>
+        <button id="btnRestablecer" class="reset-btn" data-es="RESTABLECER VALORES" data-en="RESET VALUES">RESTABLECER VALORES</button>
+    </aside>
+
+    <!-- Enlazamos las funciones lógicas de control -->
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- http://localhost:8000 -->
